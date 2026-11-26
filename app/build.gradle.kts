@@ -6,6 +6,7 @@ plugins {
 android {
     namespace = "com.nexus.ai"
     compileSdk = 35
+
     defaultConfig {
         applicationId = "com.nexus.ai"
         minSdk = 26
@@ -13,7 +14,19 @@ android {
         versionCode = 1
         versionName = "1.0"
     }
-    buildFeatures { compose = true }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = "17"
+    }
+
+    buildFeatures {
+        compose = true
+    }
 }
 dependencies {
     implementation(platform("androidx.compose:compose-bom:2024.09.00"))
