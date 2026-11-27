@@ -11,8 +11,8 @@ android {
         applicationId = "com.nexus.ai"
         minSdk = 26
         targetSdk = 35
-        versionCode = 4
-        versionName = "3.1"
+        versionCode = 5
+        versionName = "4.0"
     }
 
     compileOptions {
@@ -24,7 +24,6 @@ android {
 
 dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.9.0")
-    // Bundled on-device models: selected media is processed locally.
     implementation("com.google.mlkit:text-recognition:16.0.1")
     implementation("com.google.mlkit:face-detection:16.1.7")
 }
