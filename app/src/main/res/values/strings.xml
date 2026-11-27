@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name">ULTRON AI 3.0</string>
-    <string name="accessibility_description">Allows NEXUS to insert text into the currently focused field when you explicitly issue a type command. It does not press Send.</string>
+    <string name="app_name">ULTRON AI 4.0</string>
+    <string name="accessibility_description">Allows ULTRON to insert text into the currently focused field only when you explicitly issue a type command. It does not press Send.</string>
 </resources>
