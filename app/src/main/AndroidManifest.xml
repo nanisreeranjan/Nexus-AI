@@ -9,7 +9,7 @@
     <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
     <application
         android:allowBackup="false"
-        android:label="ULTRON AI 3.1"
+        android:label="ULTRON AI 4.0"
         android:theme="@android:style/Theme.Material.Light.NoActionBar"
         android:usesCleartextTraffic="true"
         android:supportsRtl="true">
