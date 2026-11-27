@@ -16,7 +16,7 @@ object LocalAiClient {
                 val conn = (URL(ENDPOINT).openConnection() as HttpURLConnection).apply {
                     requestMethod = "POST"
                     connectTimeout = 3500
-                    readTimeout = 90000
+                    readTimeout = 180000
                     doOutput = true
                     setRequestProperty("Content-Type", "application/json")
                 }
@@ -37,7 +37,8 @@ object LocalAiClient {
                     .put("model", "local-model")
                     .put("messages", messages)
                     .put("temperature", 0.6)
-                    .put("max_tokens", 512)
+                    .put("max_tokens", 160)
+                    .put("chat_template_kwargs", JSONObject().put("enable_thinking", false))
                 conn.outputStream.use { it.write(body.toString().toByteArray(Charsets.UTF_8)) }
                 val stream = if (conn.responseCode in 200..299) conn.inputStream else conn.errorStream
                 val response = stream.bufferedReader().use { it.readText() }
