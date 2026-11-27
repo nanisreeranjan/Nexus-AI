@@ -171,7 +171,7 @@ class MainActivity : Activity() {
             setPadding(dp(14), dp(11), dp(14), dp(11))
             background = rounded(if (user) Color.rgb(45, 68, 103) else panelColor, 18)
             maxWidth = resources.displayMetrics.widthPixels * 85 / 100
-            textIsSelectable = true
+            setTextIsSelectable(true)
         })
         messages.addView(row, LinearLayout.LayoutParams(-1, -2))
         scroll.post { scroll.fullScroll(View.FOCUS_DOWN) }
