@@ -37,7 +37,7 @@ class MainActivity : Activity() {
             typeface = Typeface.DEFAULT_BOLD
         }
         status = TextView(this).apply {
-            text = "HYBRID-READY • LOCAL-FIRST • VOICE COMPANION"
+            text = "LOCAL-FIRST • CLOUD ROUTE NOT CONFIGURED • VOICE COMPANION"
             textSize = 12f
         }
         transcript = TextView(this).apply {
