@@ -18,7 +18,7 @@ class BrowserActivity : Activity() {
         }
         val bar = LinearLayout(this).apply { orientation = LinearLayout.HORIZONTAL }
         val address = EditText(this).apply {
-            singleLine = true
+            setSingleLine(true)
             hint = "https://website.com"
             setText(intent.getStringExtra("url") ?: "https://www.google.com")
         }
